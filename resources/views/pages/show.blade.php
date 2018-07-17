@@ -1,21 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    
 
-        Title: {{$movie->title}}<br>
-        
-        Director: {{$movie->director}}<br>
+@extends('layouts.master')
 
-        Year: {{$movie->year}}<br>
+@section('content')
 
-        Teaser: {{$movie->storyline}}<br>
-        
-</body>
-</html>
+    <div class="jumbotron">
+
+            <h3>Title: {{$movie->title}}</h3>
+            
+            <p>Directed by: {{$movie->director}}<p>
+            <p>Year: {{$movie->year}}<p>
+
+            <h4>Plot: </h4>
+                <p>{{$movie->storyline}}</p>
+    </div> 
+
+@endsection
