@@ -31,7 +31,7 @@ class MoviesController extends Controller
         $this->validate(request(),[
             'title' => 'required',
             'genre' => 'required',
-            'year' => 'required|after:1900|before:2019',
+            'year' => 'required|after_or_equal:1900|before_or_equal:2018',
             'storyline' => 'required|max:1000'
          
         ]);
