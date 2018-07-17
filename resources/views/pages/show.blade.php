@@ -31,5 +31,19 @@
     </div> 
 
 
+    <form method="POST" action="/comment/{{$movie->id}}/add">
+
+        {{csrf_field()}}
+
+            <div class="form-group">
+              <label for="text">Comment</label>
+              <textarea type="text" class="form-control" id='content' name='content'></textarea>
+              @include('partials.errors', ['fieldName' =>  'content'])
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+
     
 @endsection
