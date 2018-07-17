@@ -3,7 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-
+use App\Movie;
 class Comment extends Model
 {
     protected $fillable = [
@@ -11,6 +11,7 @@ class Comment extends Model
     ];
 
     public function movie() {
-        $this->belongsTo(Movie::class);
+        
+       return $this->belongsTo(Movie::class);
     }
 }

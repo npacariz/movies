@@ -3,7 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-
+use App\Commnet;
 class Movie extends Model
 {
     protected $fillable = [
@@ -12,6 +12,6 @@ class Movie extends Model
 
     public function comments() {
 
-        $this->hasMany(Comments::class)
+       return $this->hasMany(Comment::class);
     }
 }

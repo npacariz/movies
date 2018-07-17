@@ -17,6 +17,19 @@
 
             <h4>Plot: </h4>
                 <p>{{$movie->storyline}}</p>
+
+    @if(count($movie->comments )>0)
+        <div>
+            <h5>Comments:</h5>
+            @foreach($movie->comments as $comment)
+                <p>{{$comment->content}}</p>
+                <p>posted: {{$comment->created_at}}
+            @endforeach
+        </div>
+    @endif    
+        
     </div> 
 
+
+    
 @endsection
