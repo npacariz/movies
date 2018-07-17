@@ -7,7 +7,7 @@
     @else
         <h1>All Movies</h1>
     @endif
-    
+
 @endsection
 
 @section('content')
@@ -22,5 +22,11 @@
 
         </div>
     @endforeach
+
+@endsection
+        
+@section('sidebar')
+
+    @include('partials.sidebar')
 
 @endsection
