@@ -1,6 +1,10 @@
 
 @extends('layouts.master')
+@section('page-name')
 
+    <h1>All Movies</h1>
+
+@endsection
 @section('content')
 @foreach($movies as $movie)
     <div class="jumbotron">

@@ -1,5 +1,10 @@
 
 @extends('layouts.master')
+@section('page-name')
+
+    <h1>Movie</h1>
+
+@endsection
 
 @section('content')
 

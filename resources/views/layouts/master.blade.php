@@ -21,18 +21,20 @@
             <a class="nav-link" href="/movies">Movies </a>
           </li>
           <li class="nav-item" >
-            <a class="nav-link" href="/add">Add movie</a>
+            <a class="nav-link" href="/create">Add movie</a>
           </li>
         </ul>  
       </div>
     </nav>
 
     <div class="container">
-
+      
       <div class="row row-offcanvas row-offcanvas-right">
 
         <div class="col-12 col-md-9">
+          <div class="title">@yield('page-name')</div>
             
+
             @yield('content')
 
         </div><!--/span-->
